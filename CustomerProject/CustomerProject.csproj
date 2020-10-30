@@ -135,6 +135,7 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\vwCustomerReportsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -188,6 +189,9 @@
       <DependentUpon>IRepository.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TelephoneAttribute.cs" />
+    <Compile Include="Models\vwCustomerReport.cs">
+      <DependentUpon>CustomerData.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\客戶聯絡人.cs">
       <DependentUpon>CustomerData.tt</DependentUpon>
     </Compile>
@@ -293,9 +297,11 @@
     <Content Include="Views\Bank\Details.cshtml" />
     <Content Include="Views\Bank\Edit.cshtml" />
     <Content Include="Views\Bank\Index.cshtml" />
+    <Content Include="Views\vwCustomerReports\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Report\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
